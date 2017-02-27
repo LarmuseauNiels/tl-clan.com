@@ -1,0 +1,526 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Large blocks*/
+html{
+    background-color: #545452;
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.wrapper{
+    font-family: Roboto, sans-serif;
+    display: block;
+    width: 960px;
+    margin:auto;
+    background-color: #000000;
+    padding: 0;
+    clear: both;
+    border-radius: 10px;
+}
+.content{
+    background-color: #111111;
+    padding: 15px;
+}
+header{
+    width: 960px;
+    margin: auto;
+}
+
+footer{
+    padding: 20px;
+}
+/*Specific generic elements*/
+
+h1{
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    font-size: 40pt;
+    max-width: 100%;
+    word-wrap: break-word;
+    text-transform: none;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    text-shadow: 3px 3px #000
+}
+h2{
+    margin: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+}
+p{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+a{
+    color: gray;
+    text-decoration: none;
+}
+img{
+    width: 100%
+}
+aside{
+    float: right;
+}
+/*menu*/
+nav a{
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    padding: 13px 20px 13px 20px;
+    font-size: 1.1rem;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0;
+}
+nav li{
+    text-align: left;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(#2d2d2d, #000000);
+    border-radius: 10px 10px 0 0;
+}
+.active, nav a:hover{
+    background-color: #a90000;
+}
+.home
+{
+    border-top-left-radius: 10px;
+}
+/* page specific elements */
+/*home page*/
+.carousel{
+    position: relative;
+    margin: 5px;
+    height: 518px;
+}
+.previous,.next{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgba(00,00,00,0.5);
+    padding: 10px;
+    list-style-type: none;
+    position: absolute;
+    top: 45%;
+    z-index: 9;
+}
+.next{
+    right: 0;
+}
+.previous{
+    left: 0;
+}
+/*discord page*/
+.discord{
+    width: 60%;
+    float: left;
+}
+.discord a{
+    text-decoration: none;
+}
+.discord p a{
+    color: gray;
+}
+.discordwidget{
+    height: 500px;
+}
+
+/*arma server page*/
+.banner{
+    display: block;
+    width: 76%;
+    margin: auto;
+}
+.armalinks{
+     margin-left: 115px;
+     float: left;
+ }
+.armarechts{
+    margin-left: 50px;
+    float: left;
+}
+
+/*twitch page*/
+.twitch{
+    float: left;
+    height: 364px;
+    width: 68%;
+}
+.chat{
+    height: 368px;
+    width: 31%;
+}
+/*groups page*/
+
+.steamgroup{
+    float: left;
+    width: 50%;
+}
+.armaunit{
+    float: right;
+    width: 50%;
+}
+/*error404*/
+.error404{
+    display: block;
+    width: 45%;
+    margin:  auto;
+}
+
+
+
+/*Mobile version and tablets*/
+@media only screen and (max-device-width: 1024px) {
+    /*stop sideways scrolling*/
+    .wrapper{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    .content{
+        padding: 8px;
+    }
+
+    /*smaller header*/
+    h1{
+        font-size: 35pt;
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        text-shadow: 3px 3px #000
+    }
+    /*smaller menu*/
+    nav a{
+        padding: 8px 2% 8px 2%;
+        font-size: 1rem;
+    }
+    /*home*/
+    .carousel{
+        position: relative;
+        margin: 3px;
+        height: 100%;
+    }
+    .previous,.next{
+        font-size: 1.2rem;
+        padding: 5px;
+        top: 45%;
+    }
+    /*Discord*/
+    .discord{
+        width: 65%;
+    }
+    .discordwidget{
+        height: 500px;
+        width: 35%;
+    }
+    /*arma server*/
+    .banner{
+        width: 90%;
+    }
+    .armalinks{
+        margin-left: 0;
+    }
+    .armarechts{
+        margin-left: 0;
+    }
+}
+/*phones*/
+@media only screen and (max-device-width: 550px) {
+    /*Discord*/
+    .discord{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .discordwidget{
+        width: 100%;
+    }
+    /*arma server page*/
+    .banner{
+        width: 100%;
+    }
+    .twitch{
+        float: left;
+        width: 100%;
+        height: 225px;
+    }
+    .chat{
+        float: left;
+        width: 100%;
+        height: 225px;
+    }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
